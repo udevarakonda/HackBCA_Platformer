@@ -736,6 +736,7 @@ class GameEndView(arcade.View):
 
     def on_mouse_press(self, _x, _y, _button, _modifiers):
         """Use a mouse press to advance to the 'game' view."""
+        global THE_CURRENT_LEVEL
         THE_CURRENT_LEVEL = 1
         game_view = GameView()
         self.window.show_view(game_view)
